@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:slnt,wght,CRSV,SHRP@-12..0,100..900,0..1,0..100&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+
+
+body { 
+    margin: 0;
+background-color: #F0EBE5;
+    font-family: "Geologica", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+header {
+    width: 100%;
+    padding-top: 15px;
+    height: 20vh;
+background-color: #0E7F79;
+    color: #F0EBE5;
+    text-align: center;
+
+}
+
+header a {
+background-color: #6F8DEF;
+color: #F0EBE5;
+border: 1px dashed white;
+text-decoration: none;
+display: block;
+width: 100px;
+height: 30px;
+margin: auto;
+line-height: 30px;
+transition-property: all;
+transition-duration: 2s;
+}
+
+a:hover {
+    background-color:#0E7F79;
+    border-color: white;
+    color: white;
+    }
+
+h1{
+    margin: 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #F0EBE5;
+    text-transform: capitalize;
+font-family: "Noto Serif", serif;
+    }
+
+
+h2{
+    color: #6F8DEF;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+main {
+    width: 70%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+video { width: 50%;
+    display: block;
+    margin: 10px auto;
+    border-radius:3%;
+}
+
+
+div {
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+img { 
+    width: 100%;
+    display: block;
+    border-radius:3%; }
+
+section {
+        width: 10%;
+        margin:auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    animation-name:animacion; 
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    }
+    
+    @keyframes animacion{
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(180deg);
+        }
+        50% {
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(360deg); 
+        }
+    }
+
+footer{
+    width: 100%;
+    padding-top: 15px;
+    height: 20vh;
+/*background-color: #0E7F79;*/
+background-image: url(../imagenes/imagenfondo.jpg);
+background-size: 39%;
+background-repeat: repeat-x;
+    color: #F0EBE5;
+    text-align: center;  
+    display: flex;
+align-items: center;
+justify-content: center;    
+}
